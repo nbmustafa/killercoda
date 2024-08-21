@@ -1,0 +1,29 @@
+{
+    "title": "Create a Role and Role Binding",
+    "description": "Create a new role in Kubernetes named sa-creator and bind that role to a user",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Role",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create Role Binding",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create Service Account Role Binding",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "title": "CKAD Exercises",
+    "description": "Study for the CKAD and complete these exam exercises",
+    "items": [
+      {
+        "path": "playground",
+        "title": "Playground",
+        "description": "2 node playground environment for Kubernetes"
+      },
+      {
+        "path": "create-configmap",
+        "title": "Creating a pod with configMap",
+        "description": "Create a ConfigMap and use it inside of a pod in Kubernetes"
+      },
+      {
+        "path": "debug-services",
+        "title": "Debug services in Kubernetes",
+        "description": "Check that services are operating correctly in Kubernetes"
+      },
+      {
+        "path": "node-affinity",
+        "title": "Apply node affinity to a pod",
+        "description": "Apply node affinity to a pod in Kubernetes"
+      },
+      {
+        "path": "dockerfile",
+        "title": "Create Dockerfile with Args and Run",
+        "description": "Create and run a container with a simple sleep command and entrypoint"
+      },
+      {
+        "path": "jobs",
+        "title": "Create a job and cronJob in Kubernetes",
+        "description": "Create and run a job and cronJob in Kubernetes"
+      },
+      {
+        "path": "volumes",
+        "title": "Create a Pod with emptyDir volume",
+        "description": "Create a pod with two containers, each mounting the emptyDir volume at different mount paths"
+      },
+      {
+        "path": "nginx-custom",
+        "title": "Create a custom nginx container image",
+        "description": "Create a custom nginx container image, push it to Dockerhub and run it with a pod in Kubernetes"
+      },
+      {
+        "path": "nfs-vol",
+        "title": "NFS Volumes in Kubernetes Pods",
+        "description": "Create a pod that will mount a volume of NFS type"
+      },
+      {
+        "path": "logging",
+        "title": "Logging in Kubernetes",
+        "description": "Learn how to work with logs in Kubernetes"
+      },
+      {
+        "path": "metrics-server",
+        "title": "Monitoring Kubernetes with Metrics Server",
+        "description": "Learn how to use the metrics server to observe your Kubernetes cluster"
+      },
+      {
+        "path": "blue-green",
+        "title": "Blue Green Deployments in Kubernetes",
+        "description": "Learn how to perform a blue/green deployment in Kubernetes"
+      },
+      {
+        "path": "deploy-update",
+        "title": "Create and Update Deployments",
+        "description": "Create a deployment in Kubernetes, scale the deployment and rollout to a new version"
+      } 
+    ]
+  }

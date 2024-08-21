@@ -1,0 +1,1 @@
+echo "FROM busybox" > ~/Dockerfile

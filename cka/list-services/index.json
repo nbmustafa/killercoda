@@ -1,0 +1,21 @@
+{
+    "title": "List All Kubernetes Services",
+    "description": "Use the kubectl command-line to list all Kubernetes services",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "List the Kubernetes Services",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

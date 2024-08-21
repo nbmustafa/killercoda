@@ -1,0 +1,171 @@
+{
+    "title": "CKA Exercises",
+    "description": "Study for the CKA and complete these exam exercises",
+    "items": [
+      {
+        "path": "playground",
+        "title": "CKA Playground",
+        "description": "2 node playground environment for Kubernetes"
+      },
+      {
+        "path": "api-resources",
+        "title": "List API Resources",
+        "description": "List all the K8s API resources in your cluster"
+      },
+      {
+        "path": "linux-services",
+        "title": "Linux System Services",
+        "description": "List all the Linux system services associated with Kubernetes"
+      },
+      {
+        "path": "kubelet-status",
+        "title": "Kubelet Status",
+        "description": "Get the status of the kubelet service running on the Kubernetes node"
+      },
+      {
+        "path": "declarative-pod",
+        "title": "Create a Pod Declaratively",
+        "description": "Use the kubectl command-line to create the YAML for a pod declaratively"
+      },
+      {
+        "path": "list-services",
+        "title": "List All Kubernetes Services",
+        "description": "Use the kubectl command-line to list all Kubernetes services"
+      },
+      {
+        "path": "pod-ip",
+        "title": "List the Pods and Their IP Addresses",
+        "description": "Using kubectl, list the pods in the kube-system namespace with their IP addresses"
+      },
+      {
+        "path": "view-certificate",
+        "title": "View the Kubelet Client Certificate",
+        "description": "View the client certificate that kubelet uses to authenticate to the Kubernetes API"
+      },
+      {
+        "path": "create-role",
+        "title": "Create a Role and Role Binding",
+        "description": "Create a new role in Kubernetes named sa-creator and bind that role to a user"
+      },
+      {
+        "path": "create-cluster-role",
+        "title": "Create a Cluster Role and Role Binding",
+        "description": "Create a new cluster role and bind that cluster role to a service account"
+      },
+      {
+        "path": "upgrade-k8s",
+        "title": "Upgrading Kubernetes",
+        "description": "Upgrade the Kubernetes control plane components with kubeadm"
+      },
+      {
+        "path": "create-sa-for-pod",
+        "title": "Create Service Account For a Pod",
+        "description": "Create a service account for use with a pod, ensure the token is not exposed!"
+      },
+      {
+        "path": "taints-tolerations",
+        "title": "Taints and Tolerations",
+        "description": "Apply a taint to a node to repel work"
+      },
+      {
+        "path": "kubernetes-backup-etcd",
+        "title": "Backup etcd",
+        "description": "Backup and restore etcd in a Kubernetes cluster"
+      },
+      {
+        "path": "kubernetes-create-user",
+        "title": "Create New User",
+        "description": "Create a new user in Kubernetes"
+      },
+      {
+        "path": "node-affinity",
+        "title": "Apply node affinity to a pod",
+        "description": "Apply node affinity to a pod in Kubernetes"
+      },
+      {
+        "path": "node-name",
+        "title": "Scheduling a pod to a specific node",
+        "description": "Schedule a pod to a node by the node's name"
+      },
+      {
+        "path": "upgrade-kubelet",
+        "title": "Upgrade Kubelet",
+        "description": "Use the apt package manager to upgrade kubelet to version 1.27.0"
+      },
+      {
+        "path": "logging",
+        "title": "Logging in Kubernetes",
+        "description": "Create two different pods, and inspecting each of the container logs"
+      },
+      {
+        "path": "configmaps",
+        "title": "ConfigMaps in Kubernetes",
+        "description": "Create and use configmaps in Kubernetes"
+      },
+      {
+        "path": "change-deployment-image",
+        "title": "Change Deployment Image",
+        "description": "Create an Apache deployment, scale the deployment to five replicas, and change the image used"
+      },
+      {
+        "path": "create-apache-deployment",
+        "title": "Create and Scale Apache Deployment",
+        "description": "Create an Apache deployment, using the httpd:latest image, then scale the deployment to five replicas"
+      },
+      {
+        "path": "rollback-deployment",
+        "title": "Rollback a Deployment",
+        "description": "Create a deployment, change the image, then rollback to a previous rollout version"
+      },
+      {
+        "path": "change-rollout-strategy",
+        "title": "Change Rollout Strategy",
+        "description": "Create a deployment, change the rollout strategy to 'Recreate', then change the image used for the deployment"
+      },
+      {
+        "path": "cordon-drain-node",
+        "title": "Cordon and Drain the Node",
+        "description": "The node has a memory leak and must be taken down for maintenenance. Disable scheduling and evict pods."
+      },
+      {
+        "path": "nodeselector-cordon",
+        "title": "Cordon and Select Node",
+        "description": "Use a nodeSelector to schedule a pod to a cordoned node"
+      },
+      {
+        "path": "add-toleration",
+        "title": "Add a Toleration to a Pod YAML",
+        "description": "You've been given the YAML for a pod, in which you must add a toleration in order for it to be scheduled to the controlplane node"
+      },
+      {
+        "path": "remove-taint",
+        "title": "Remove the Taint from Node",
+        "description": "Determine how to remove the taint from a pod in order to make it available for scheduling"
+      },
+      {
+        "path": "modify-cluster-dns",
+        "title": "Modify Cluster DNS",
+        "description": "Change the IP addresses that are used for services and pods in a Kubernetes cluster"
+      },
+      {
+        "path": "communicate-with-svc",
+        "title": "Resolve Service IP from Pod",
+        "description": "Ensure that you can reach the service using its DNS name in Kubernetes"
+      },
+      {
+        "path": "create-ingress",
+        "title": "Create Ingress Resource",
+        "description": "Create an ingress resource in Kubernetes that routes to a service"
+      },
+      {
+        "path": "restart-policy",
+        "title": "Pod Restart Policy",
+        "description": "Create a pod and change its restart policy"
+      },
+      {
+        "path": "persistent-volumes",
+        "title": "Persistent Volumes",
+        "description": "Create persistentvolumes and persistentvolumeclaims in Kubernetes"
+      } 
+    ]
+  }

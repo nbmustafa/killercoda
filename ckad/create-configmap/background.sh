@@ -1,0 +1,1 @@
+echo "this is a cool background script" > /tmp/finished.txt

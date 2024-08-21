@@ -1,0 +1,26 @@
+{
+    "title": "Create a job and cronjob in Kubernetes",
+    "description": "Create and run a job and cronjob in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a job",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create a cronJob",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

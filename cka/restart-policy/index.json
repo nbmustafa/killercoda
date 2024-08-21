@@ -1,0 +1,25 @@
+{
+    "title": "Pod Restart Policy",
+    "description": "Create a pod and change its restart policy",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a Pod",
+                "text": "step1.md"
+            },
+            {
+                "title": "Fix the CrashLoopBackOff",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

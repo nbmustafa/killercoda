@@ -1,0 +1,29 @@
+{
+    "title": "Upgrade Kubernetes",
+    "description": "Use kubeadm to upgrade the Kubernetes control plane components",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check the current version and the target version",
+                "text": "step1.md"
+            },
+            {
+                "title": "Upgrade kubeadm",
+                "text": "step2.md"
+            },
+            {
+                "title": "Upgrade Kubernetes",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    }
+}
