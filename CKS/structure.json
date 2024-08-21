@@ -1,0 +1,14 @@
+{
+  "title": "CKS Exercises",
+  "description": "Study for the CKS and complete these exam exercises",
+  "items": [
+    { "path": "cluster-hardening-1"},
+    { "path": "cluster-hardening-2"},
+    { "path": "filesystem-security" },
+    { "path": "image-digest"},
+    { "path": "kubernetes-dashboard"},
+    { "path": "network-policy-1"},
+    { "path": "sandbox-gvisor"},
+    { "path": "seccomp-profile"}
+  ]
+}

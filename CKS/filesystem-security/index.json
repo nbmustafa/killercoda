@@ -1,0 +1,28 @@
+{
+  "title": "[Monitoring, Logging, and Runtime Security] Read-Only Container Filesystem ",
+  "description": "Enhance container security by configuring a read-only filesystem and allowing specific paths to be writable.",
+  "details": {
+  "intro": {
+    "text": "intro.md",
+    "background": "background.sh"
+  },
+  "steps": [
+    {
+      "title": "Create a Pod with Read-Only Filesystem",
+      "text": "step1/step.md",
+      "verify": "step1/verify.sh"
+    },
+    {
+      "title": "Configure Writable Paths",
+      "text": "step2/step.md",
+      "verify": "step2/verify.sh"
+    }
+  ],
+  "finish": {
+    "text": "finish.md"
+  }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

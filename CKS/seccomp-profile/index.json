@@ -1,0 +1,30 @@
+{
+    "title": "[System Hardening] Seccomp",
+    "description": "Configure a seccomp profile to audits system calls in a Kubernetes environment.",
+    "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Create a Seccomp Profile",
+        "text": "step1/step.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Apply the Seccomp Profile to a Pod",
+        "text": "step2/step.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  

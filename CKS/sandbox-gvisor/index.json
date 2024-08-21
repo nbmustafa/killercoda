@@ -1,0 +1,29 @@
+{
+    "title": "[Minimize Microservice Vulnerabilities] Sandbox Container gVisor",
+    "description": "Install and use gVisor to enhance isolation and minimize vulnerabilities in a Kubernetes environment.",
+    "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Install gVisor and Configure Runtime Class",
+        "text": "step1/step.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Create a Pod Using the Runtime",
+        "text": "step2/step.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
+  

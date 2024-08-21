@@ -1,0 +1,29 @@
+{
+  "title": "[Supply Chain Security] Image Digest",
+  "description": "Change the image of an existing pod using signed container image (image digest) from Dockerhub.",
+  "details": {
+  "intro": {
+    "text": "intro.md",
+    "background": "background.sh",
+    "foreground": "foreground.sh"
+  },
+  "steps": [
+    {
+      "title": "Get Image Digest from Docker Hub",
+      "text": "step1/step.md",
+      "verify": "step1/verify.sh"
+    },
+    {
+      "title": "Update Pod Image with Digest",
+      "text": "step2/step.md",
+      "verify": "step2/verify.sh"
+    }
+  ],
+  "finish": {
+    "text": "finish.md"
+  }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

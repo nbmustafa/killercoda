@@ -1,0 +1,29 @@
+{
+  "title": "[Cluster Setup] Network Policies",
+  "description": "Enforce network policies for secure pod communication.",
+  "details": {
+  "intro": {
+    "text": "intro.md",
+    "background": "background.sh",
+    "foreground": "foreground.sh"
+  },
+  "steps": [
+    {
+      "title": "Create a Network Policy to Allow Traffic from Specific Pods",
+      "text": "step1/step.md",
+      "verify": "step1/verify.sh"
+    },
+    {
+      "title": "Test Network Policies by Creating Pods",
+      "text": "step2/step.md",
+      "verify": "step2/verify.sh"
+    }
+  ],
+  "finish": {
+    "text": "finish.md"
+  }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
