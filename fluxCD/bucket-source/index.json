@@ -1,5 +1,5 @@
 {
-    "title": "Adding a Bucket Source in Flux CD",
+    "title": "Adding a Bucket Source in FluxCD",
     "description": "Create an S3 Bucket as a Flux Source with Kustomization for Fun",
     "details": {
         "intro": {
