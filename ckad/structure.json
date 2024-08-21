@@ -66,6 +66,19 @@
         "path": "deploy-update",
         "title": "Create and Update Deployments",
         "description": "Create a deployment in Kubernetes, scale the deployment and rollout to a new version"
-      } 
+      },
+      { "path": "pods"},
+      { "path": "labels_and_selectors"},
+      { "path": "replica_sets" },
+      { "path": "environment_variables"},
+      { "path": "volumes"},
+      { "path": "configmaps"},
+      { "path": "secrets"},
+      { "path": "security_context"},
+      { "path": "resource_quota"},
+      { "path": "resource_limitrange"},
+      { "path": "resource_requests"},
+      { "path": "node_selector"},
+      { "path": "taint_and_tolerations"}
     ]
   }
