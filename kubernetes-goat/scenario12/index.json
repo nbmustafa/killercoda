@@ -1,0 +1,41 @@
+{
+    "title": "Scenario 03 - ⎈ Gaining environment information",
+    "description": "bad stuff happens when you...",
+    "details": {
+        "intro": {
+          "text": "intro.md",
+          "background": "background_setup.sh",
+          "foreground": "setup_msg.sh"
+        },
+        "steps": [
+          {
+            "title": "⚡️ The story",
+            "text": "step01.md"
+          },
+          {
+            "title": "⚡️ The goal",
+            "text": "step02.md"
+          },
+          {
+            "title": "⚡️ Hints & Spoilers",
+            "text": "step03.md"
+          },
+          {
+            "title": "⚡️ The solution",
+            "text": "step04.md"
+          },
+          {
+            "title": "⚡️ Verify",
+            "text": "step05.md",
+            "verify": "verify.sh"
+          }
+        ],
+        "finish": {
+          "title": "Hooray 🥳",
+          "text": "finish.md"
+        }
+      },
+      "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-ubuntu20.04"
+      }
+}

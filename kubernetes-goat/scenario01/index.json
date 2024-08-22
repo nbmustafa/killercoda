@@ -1,0 +1,45 @@
+{
+    "title": "Scenario 01 - ⎈ Sensitive keys in codebases",
+    "description": "This scenario is to focus on some popular mistakes by developers & DevOps teams when packaging the artifacts and application codebase. It has real-world impacts like a compromise of organizations and their infrastructure in the wild.",
+    "details": {
+        "intro": {
+          "text": "intro.md",
+          "background": "background_setup.sh",
+          "foreground": "setup_msg.sh"
+        },
+        "steps": [
+          {
+            "title": "⚡️ The story",
+            "text": "step01.md"
+          },
+          {
+            "title": "⚡️ The page",
+            "text": "step02.md"
+          },
+          {
+            "title": "⚡️ The config",
+            "text": "step03.md"
+          },
+          {
+            "title": "⚡️ Get git",
+            "text": "step04.md"
+          },
+          {
+            "title": "⚡️ Get env",
+            "text": "step05.md"
+          },
+          {
+            "title": "⚡️ The secret",
+            "text": "step06.md",
+            "verify": "verify.sh"
+          }
+        ],
+        "finish": {
+          "title": "Hooray 🥳",
+          "text": "finish.md"
+        }
+      },
+      "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-ubuntu20.04"
+      }
+}

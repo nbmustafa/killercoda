@@ -1,0 +1,40 @@
+{
+    "title": "Scenario 04 - ⎈ Container escape to the host system",
+    "description": "This scenario showcases the common misconfigurations and one of the error-prone security issues in Kubernetes, container environments, and the general security world. Giving privileges that are not required for things always makes security worse. This is especially true in the containers and Kubernetes world. You can also apply this scenario further and beyond the container to other systems and services based on the configuration and setup of the cluster environments and resources. In this scenario you will see a privileged container escape to gain access to the host system.",
+    "details": {
+        "intro": {
+          "text": "intro.md",
+          "background": "background_setup.sh",
+          "foreground": "setup_msg.sh"
+        },
+        "steps": [
+          {
+            "title": "⚡️ The story",
+            "text": "step01.md"
+          },
+          {
+            "title": "🎯 Goal",
+            "text": "step02.md"
+          },
+          {
+            "title": "🪄 Hints & Spoilers",
+            "text": "step03.md"
+          },
+          {
+            "title": "🎉 Solution & Walkthrough",
+            "text": "step04.md"
+          },
+          {
+            "title": "⚡️ Wrap up",
+            "text": "step05.md"
+          }
+        ],
+        "finish": {
+          "title": "Hooray 🥳",
+          "text": "finish.md"
+        }
+      },
+      "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-ubuntu20.04"
+      }
+}

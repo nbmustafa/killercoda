@@ -1,0 +1,49 @@
+{
+  "title": "DIND (docker-in-docker) exploitation",
+  "description": "we try to exploit and gain access to the host system.",
+  "details": {
+    "intro": {
+      "title": "Intro",
+      "text": "intro/text.md",
+      "foreground": "intro/foreground.sh",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "⚡️ The story",
+        "text": "step1.md"
+      },
+      {
+        "title": "⚡️ Getting started",
+        "text": "step2.md"
+      },
+      {
+        "title": "🎯 Goal",
+        "text": "step3.md"
+      },
+      {
+        "title": "🪄 Hints & Spoilers",
+        "text": "step4.md"
+      },
+      {
+        "title": "🎉 Solution & Walkthrough 1",
+        "text": "step5.md"
+      },
+      {
+        "title": "🎉 Solution & Walkthrough 2",
+        "text": "step6.md"
+      },
+      {
+        "title": "⚡️ The End",
+        "text": "step7.md",
+        "verify": "verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
