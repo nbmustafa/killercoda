@@ -1,6 +1,6 @@
 {
     "title": "Kubernetes Goat - Hands On",
-    "description": "This course is meant to walk you through the kubernetes goat repository. Dig deeper here: https://madhuakula.com/kubernetes-goat/",
+    "description": "This course is to take you through the kubernetes goat scenarios. Dig deeper here: https://madhuakula.com/kubernetes-goat/",
     "items": [
       { "path": "scenario01",
       "title": "Scenario 01 - ⎈ Sensitive keys in codebases",
