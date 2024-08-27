@@ -9,6 +9,7 @@
     { "path": "kubernetes-dashboard"},
     { "path": "network-policy-1"},
     { "path": "sandbox-gvisor"},
-    { "path": "seccomp-profile"}
+    { "path": "seccomp-profile"},
+    { "path": "falco-rules"}
   ]
 }
