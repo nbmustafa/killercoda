@@ -10,6 +10,8 @@
     { "path": "network-policy-1"},
     { "path": "sandbox-gvisor"},
     { "path": "seccomp-profile"},
-    { "path": "falco-rules"}
+    { "path": "container-non-root"},
+    { "path": "falco-security"},
+    { "path": "static-analysis"}
   ]
 }

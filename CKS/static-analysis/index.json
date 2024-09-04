@@ -1,0 +1,25 @@
+{
+    "title": "[Supply Chain Security] Static Analysis",
+    "description": "Exercise your skills in identifying insecure configurations in Kubernetes YAML files and Dockerfiles.",
+    "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Inspect and Mark Insecure Configurations",
+        "text": "step1/step.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
+  

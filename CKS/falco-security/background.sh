@@ -9,6 +9,7 @@ ssh -t node01 << EOF
   sudo apt-get install -y falco
 EOF
 
+kubectl create ns falco-test
 
 # Install deployment 1 to compromise nc activities
 cat <<EOF | kubectl apply -f -
@@ -27,6 +28,8 @@ spec:
       labels:
         app: zany-smile
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: node01
       containers:
       - name: zany-smile
         image: alpine:3.14
@@ -51,16 +54,81 @@ spec:
       labels:
         app: monstrous-kraken
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: node01
       containers:
       - name: monstrous-kraken
         image: ubuntu
-        command: ["sh", "-c", "cat .aws/credentials"]
+        command:
+        - sh
+        - -c
+        - |
+          mkdir -p /root/.aws
+          head -c 14 /dev/urandom | base64 > /root/.aws/credentials
+          while true; do find /root -name .aws/credentials; sleep 5; done
 EOF
 
 # Install other deployments that run normally
-kubectl create deployment starry-shadow -n falco-test --image alpine:3.14 --replicas 2 -- sleep 1d
-kubectl create deployment firedrake-champion -n falco-test --image nginx --replicas 1 
+cat <<EOF | kubectl apply -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: starry-shadow
+  name: starry-shadow
+  namespace: falco-test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: starry-shadow
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: starry-shadow
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: node01
+      containers:
+      - command:
+        - sleep
+        - 1d
+        image: alpine:3.14
+        name: alpine
+EOF
+
+
+cat <<EOF | kubectl apply -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: firedrake-champion
+  name: firedrake-champion
+  namespace: falco-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: firedrake-champion
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: firedrake-champion
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: node01
+      containers:
+      - image: nginx
+        name: nginx
+EOF
+
 
 sleep 5
-
 touch /tmp/finished

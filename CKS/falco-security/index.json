@@ -1,5 +1,5 @@
 {
-    "title": "[Monitoring, Logging, and Runtime Security] Falco",
+    "title": "[Monitoring, Logging, and Runtime Security] Falco Security",
     "description": "Strengthen your understanding of Falco by detecting and mitigating potential security threats in a Kubernetes environment.",
     "details": {
     "intro": {
@@ -9,14 +9,9 @@
     },
     "steps": [
       {
-        "title": "Deploy Applications That Trigger Falco Rules",
+        "title": "Monitor Falco Alerts and Mitigate the Threats",
         "text": "step1/step.md",
         "verify": "step1/verify.sh"
-      },
-      {
-        "title": "Monitor Falco Alerts and Mitigate the Threats",
-        "text": "step2/step.md",
-        "verify": "step2/verify.sh"
       }
     ],
     "finish": {
