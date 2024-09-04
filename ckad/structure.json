@@ -79,6 +79,9 @@
       { "path": "resource_limitrange"},
       { "path": "resource_requests"},
       { "path": "node_selector"},
-      { "path": "taint_and_tolerations"}
+      { "path": "taint_and_tolerations"},
+      { "path": "multi_container_pods"},
+      { "path": "init_containers"},
+      { "path": "readiness_and_liveness_probe"}
     ]
   }
