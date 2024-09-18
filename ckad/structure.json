@@ -70,6 +70,7 @@
       { "path": "pods"},
       { "path": "labels_and_selectors"},
       { "path": "replica_sets" },
+      { "path": "deployment"},
       { "path": "environment_variables"},
       { "path": "volumes"},
       { "path": "configmaps"},
