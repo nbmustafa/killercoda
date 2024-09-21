@@ -1,7 +1,0 @@
-{
-  "items": [
-    { "path": "playground" },
-    { "path": "install-istio-ambient-mesh"},
-    { "path": "deploying-applications-in-mbient-mesh"}
-  ]
-}
