@@ -17,7 +17,7 @@ helm install istiod istio/istiod -n istio-system
 ```{{exec}}
 
 Install Ambient Mesh components (Ztunnel and Waypoints)
-``bash
+```bash
 helm install ambient istio/gateway -n istio-system --set values.ambient.enabled=true --set values.pilot.enabled=false
 ```{{exec}}
 
