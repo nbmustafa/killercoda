@@ -1,0 +1,9 @@
+{
+  "title": "Istio Ambient Mesh",
+  "description": "Practice Istio Ambient Mesh",
+  "items": [
+    { "path": "playground" },
+    { "path": "install-istio-ambient-mesh"},
+    { "path": "deploying-applications-in-mbient-mesh"}
+  ]
+}
