@@ -1,12 +1,21 @@
 {
-  "title": "Installing Istio Ambient Mesh",
-  "description": "Install Istio Ambient Mesh.",
+  "title": "Deploy Application in Ambient Mesh",
+  "description": "Practice Deploying Application in Ambient Mesh",
   "details": {
     "steps": [
       {
-        "title": "Install Istio Ambient Mesh",
+        "title": "Annotate namespace for ambient mode",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Deploying a Microservices Application",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Testing the Application",
+        "text": "step3/text.md"
       }
     ],
     "finish": {

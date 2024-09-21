@@ -34,7 +34,7 @@ touch /ks/.istiofinished
 kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
 
 # Install Sample Application
-kubectl label namespace default istio-injection=enabled
+kubectl label namespace default istio.io/dataplane-mode=ambient
 kubectl run tester --image=nginx
 while ! kubectl get pods | grep -w "Running"; do echo -n "."; sleep 1; done
 
