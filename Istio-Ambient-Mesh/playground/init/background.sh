@@ -14,13 +14,23 @@ helm repo add istio https://istio-release.storage.googleapis.com/charts
 helm repo update
 
 # Install Istio Base Components
-helm install istio-base istio/base -n istio-system --create-namespace
+helm install istio-base istio/base -n istio-system --create-namespace --wait
 
-# Install the Istio Ambient Mesh
-helm install istiod istio/istiod -n istio-system
+# Install or upgrade the Kubernetes Gateway API CRDs
+kubectl get crd gateways.gateway.networking.k8s.io &> /dev/null || \
+  { kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.1.0/standard-install.yaml; }
 
-# Install Ambient Mesh components (Ztunnel and Waypoints)
-helm install ambient istio/gateway -n istio-system --set values.ambient.enabled=true --set values.pilot.enabled=false
+# Isntall Istiod control plane in ambient mode
+helm install istiod istio/istiod --namespace istio-system --set profile=ambient --wait
+
+# Install CNI node agent
+helm install istio-cni istio/cni -n istio-system --set profile=ambient --wait
+
+# Install Ztunnel
+helm install ztunnel istio/ztunnel -n istio-system --wait
+
+# istio Ingress Gateway
+helm install istio-ingress istio/gateway -n istio-ingress --create-namespace --wait
 
 # Verify Installation
 kubectl get pods -n istio-system
