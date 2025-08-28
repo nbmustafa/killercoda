@@ -35,7 +35,6 @@ helm install istio-ingress istio/gateway -n istio-ingress --create-namespace --w
 # Verify Installation
 kubectl get pods -n istio-system
 
-
 touch /ks/.istiofinished
 
 # Init scenario

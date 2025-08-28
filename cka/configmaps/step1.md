@@ -6,22 +6,27 @@ Create a configmap named `redis-config`. Within the configMap, use the key `maxm
 <details><summary>Solution</summary>
 <br>
 
+Quickly create a YAML file for the `configMap`
 ```bash
-k create configmap redis-config --from-literal=key1=config1 --from-literal=key2=config2 --dry-run=client -o yaml > redis-config.yaml
+k create configmap redis-config --from-literal=redis.conf=config --dry-run=client -o yaml > redis-config.yaml
 ```{{exec}}
 
-```bash
-cat << EOF > redis-configMap.yaml
+Open the file `redis-config.yaml` and insert the mutli-line values for redis.conf
+```yaml
 apiVersion: v1
 data:
-  redis-config: |
-    maxmemory: 2mb
-    maxmemory-policy: allkeys-lru
+  redis.conf: |
+    maxmemory 2mb
+    maxmemory-policy allkeys-lru
 kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: redis-config
-EOF
-```{{exec}}
+```{{copy}}
+
+Create the `configMap` from the file `redis-config.yaml`
+```bash
+k apply -f redis-config.yaml
+```
 
 </details>

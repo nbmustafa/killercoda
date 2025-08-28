@@ -1,0 +1,30 @@
+{
+    "title": "Debug a Go App in Kubernetes",
+    "description": "Debug a Go App Running in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "See if the Go App is Running",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Debug The App",
+                "text": "step2.md"
+            },
+            {
+                "title": "Fix the Error",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "title": "Create a Gateway and HTTPRoute",
+    "description": "Using the Gateway API CRDs, deploy a basic Gateway and HTTPRoute to handle ingress traffic",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Verify Gateway API CRDs",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create a Basic Gateway",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a Deployment and Service",
+                "text": "step3.md"
+            },
+            {
+                "title": "Create Path-Based HTTPRoute",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "title": "Install a Database Operator",
+    "description": "Create a PostgreSQL DB Operator in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Install Operator",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create Database CRD",
+                "text": "step2.md"
+            },
+            {
+                "title": "Scale the Database",
+                "text": "step3.md"
+            },
+            {
+                "title": "Simulate a DB Failure",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
